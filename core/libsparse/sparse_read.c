@@ -472,7 +472,7 @@ struct sparse_file *sparse_file_import(int fd, bool verbose, bool crc)
 	return s;
 }
 
-struct sparse_file *sparse_file_import_auto(int fd, bool crc)
+struct sparse_file *sparse_file_import_auto(int fd, bool crc, bool verbose)
 {
 	struct sparse_file *s;
 	int64_t len;
